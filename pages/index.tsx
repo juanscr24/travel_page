@@ -1,10 +1,20 @@
-import Image from 'next/image'
+import Camp from '@/components/Camp'
+import Features from '@/components/Features'
+import GetApp from '@/components/GetApp'
+import Guide from '@/components/Guide'
+import Hero from '@/components/Hero'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <h1>Home</h1>
+    <div>
+      <Hero />
+      <Camp />
+      <Guide />
+      <Features />
+      <GetApp />
+    </div>
   )
 }
